@@ -29,8 +29,8 @@ class sum
 int main()
 {
     sum c1,c2,c3;
-    c1.setdata(2,4);
-    c2.setdata(1,5);
+    c1.setdata(4,6);
+    c2.setdata(3,8);
     c3=c1+c2;
     c3.showdata();
 }
