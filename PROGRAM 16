@@ -2,15 +2,13 @@
 #include <iostream>
 
 using namespace std;
-
 class alphabet
 {
     char p,q;
      public:
          void letter(char m,char n)
          {
-
-             p=m;
+            p=m;
              q=n;
          }
          alphabet operator +()
@@ -21,15 +19,11 @@ class alphabet
          }
          void display()
          {
-
-             cout<<"alphabet after incrementing is: "<<p<<endl;
-             cout<<"alphabet after incrementing is: "<<q;
+         cout<<"alphabet after incrementing is: "<<p<<endl;
+          cout<<"alphabet after incrementing is: "<<q;
         }
-
 };
-
 int main()
-
 {
     alphabet obj1;
     char m,n;
