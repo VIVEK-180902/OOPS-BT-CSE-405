@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+class matrix
+{
+    int m[3][3];
+    public:
+    void getmatrix()
+     {
+         for(int i=0;i<3;i++)
+         {
+             for(int j=0;j<3;j++)
+         {
+             cin>>m[i][j];
+         }
+         }
+    }
+     void display()
+     {
+         for(int i=0;i<3;i++)
+         {
+             for(int j=0;j<3;j++)
+             {
+                 cout<<m[i][j]<<"";
+             }
+             cout<<endl;
+         }
+     }
+    };
+int main()
+{
+    matrix m;
+    cout<<"enter matrix";
+    m.getmatrix();
+    cout<<"matrix you entered is:"<<endl;
+    m.display();
+    return 0;
+};
