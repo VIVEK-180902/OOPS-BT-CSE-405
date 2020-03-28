@@ -1,0 +1,41 @@
+// PROGRAM TO FIND GREATEST NUMBER AMONG THREE NUMBERS USING FUNCTION //
+
+
+#include <iostream>
+
+using namespace std;
+
+
+class GOOGLE
+
+{
+      protected:
+            int x,y,z;
+      public:
+        void getval()
+        {
+            cout<<"enter value of x , y and z: "<<endl;
+            cin>>x>>y>>z;
+        }
+        void greatest()
+        {
+            if(x>y&&x>z)
+            {
+                cout<<"greatest number is : "<<x<<endl;
+            }
+            if(y>x&&y>z)
+            {
+                cout<<"greatest number is : "<<y<<endl;
+            }
+            else
+                cout<<"greatest number is : "<<z<<endl;
+        }
+};
+
+int main()
+{
+    GOOGLE v;
+    v.getval();
+    v.greatest();
+    return 0;
+}
