@@ -1,0 +1,77 @@
+// hybrid inheritance//
+
+#include<iostream>
+using namespace std;
+class length
+{
+	int p;
+	public:
+		void getp(int m)
+		{
+			p=m;
+		}
+		int putp()
+		{
+			return p;
+		}
+};
+class breadth:public length
+{
+	int q;
+	public:
+		void getq(int n)
+		{
+			q=n;
+		}
+		int putq()
+		{
+			return q;
+		}
+		int res()
+		{
+			return putp()*putq();
+		}
+};
+class height
+{
+	int r;
+	public:
+		void getr(int t)
+		{
+			r=t;
+		}
+		int putt()
+		{
+		return r;
+		}
+};
+class volume:public breadth,public height
+{ 	int v;
+ public:
+	int result()
+	{
+	v=res()*putt();
+	return v;
+	}
+	void display()
+	{
+	cout<<"volume of cuboid is : "<<result()<<endl;
+}
+};
+int main()
+{
+volume u;
+int g,f,i;
+cout<<"enter value of length : "<<endl;
+cin>>g;
+cout<<"enter value of breadth : "<<endl;
+cin>>f;
+cout<<"enter value of height : "<<endl;
+cin>>i;
+u.getp(g);
+u.getq(f);
+u.getr(i);
+u.res();
+u.display();
+ return 0;
+}
