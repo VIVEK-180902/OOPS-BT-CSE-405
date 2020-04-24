@@ -1,0 +1,29 @@
+//containership//
+
+
+#include<iostream>
+using namespace std;
+class MAC
+{
+	public:
+		void disp()
+		{
+			cout<<" output from the class first"<<endl;
+		}
+};
+class IOS
+{
+	MAC x;
+	public:
+		void display()
+		{
+			x.disp();
+			cout<<" output from the class second"<<endl;
+		}
+};
+int main()
+{
+	 IOS y;
+	 y.display();
+	 return 0;
+}
