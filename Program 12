@@ -1,0 +1,56 @@
+// multiple inheritance //
+
+#include<iostream>
+using namespace std;
+class beginner
+{ 	int p;
+	public:
+		void getp(int m)
+		{
+		p   =m;
+		}
+		int putp()
+		{
+			 return p;
+		}
+};
+class intermediate
+{
+int q;
+public:
+   void getq(int n)
+   {
+   	q=n;
+   }
+   int putr()
+   {
+   	return q;
+   }
+};
+class conclude : public beginner , public intermediate
+{
+	public:
+		int x;
+		int result()
+		{
+			x=(putp()+putr());
+			return x;
+		}
+		void display()
+		{
+			cout<<"final score is : "<<result()<<endl;
+		}
+};
+int main()
+{
+	conclude t;
+	int m,n;
+	cout<<"score of first match : "<<endl;
+	cin>>m;
+	cout<<"score of second match : "<<endl;
+	cin>>n;
+	t.getp(m);
+	t.getq(n);
+	t.display();
+	return 0;
+}
